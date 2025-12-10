@@ -10,16 +10,8 @@ letter-spacing: 0%;
 }
 
 h1 {
-font-family: Raleway;
-font-weight: 700;
-font-style: Bold;
-font-size: 100px;
-leading-trim: NONE;
-line-height: 114.99999999999999%;
-letter-spacing: 30%;
-text-transform: uppercase;
-color: #FFF;
-z-index: 2;
+  
+
 }
 
 h2 {
@@ -30,6 +22,7 @@ font-size: 40px;
 line-height: 100%;
 letter-spacing: 0%;
 text-transform: uppercase;
+word-spacing:25px;
 }
 
 
@@ -81,31 +74,104 @@ padding: 133px 50px ;
 }
 
 .cover {
-  position: relative;
-   
-  padding: 100px 90px; /* отступы, чтобы текст не прилипал к краям */
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    padding: 100px 90px;
 
-  color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  background-image: url("/images/cover.jpg"); /* твой фон */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("/images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #FFF;
 }
 
+
+/* Оверлей */
 .overlay {
-  position: absolute;
-  inset: 0;                 /* заменяет left:0; top:0; width:100%; height:100% */
-  background-color: rgba(0, 0, 0, 0.4); /* полупрозрачный слой */
-  z-index: 1;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1;
 }
 
 
+/* Заголовок */
+.cover-title {
+    position: relative;
+    z-index: 2;
+
+      display: flex;
+  flex-direction: column;
+font-family: Raleway;
+font-weight: 700;
+font-style: Bold;
+font-size: 100px;
+leading-trim: NONE;
+line-height: 114.99999999999999%;
+letter-spacing: 30%;
+text-transform: uppercase;
+color: #FFF;
+z-index: 2;
+
+    display: flex;
+    flex-direction: column;   /* <-- ГЛАВНОЕ */
+}
+
+
+/* Каждое слово в заголовке */
+.cover-title span {
+    display: block;           /* <-- делает каждое слово отдельной строкой */
+}
+
+
+/* Выравнивание слов */
+.aligned-text {
+    text-align: left;
+}
+
+.aligned-text-center {
+    text-align: center;
+}
+
+.aligned-text-right {
+    text-align: right;
+}
+
+
+/* Описание */
 .description {
-  position: relative;
-  z-index: 2;
+    margin-top: 50px;
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.description-text {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
+/* Кнопка */
+.description-button {
+    background: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+
+    padding: 12px 32px;
+
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
