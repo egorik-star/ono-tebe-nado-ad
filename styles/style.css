@@ -142,7 +142,7 @@ letter-spacing: 0%;
     flex-direction: column;
     justify-content: center;
 
-    background-image: url("/images/cover.jpg");
+    background-image: url("../images/cover.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -341,17 +341,17 @@ align-self: flex-end;
 }
 
 .lot1 {
-    background-image: url(/images/card-lot-01.jpg);
+    background-image: url(../images/card-lot-01.jpg);
     background-size: cover;
 
 }
 
 .lot2 {
-    background-image: url(/images/card-lot-02.jpg);
+    background-image: url(../images/card-lot-02.jpg);
     background-size: cover;
 }
 
 .lot3 {
-    background-image: url(/images/card-lot-03.jpg);
+    background-image: url(../images/card-lot-03.jpg);
     background-size: cover;
 }
