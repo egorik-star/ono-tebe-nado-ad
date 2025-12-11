@@ -1,11 +1,5 @@
 a {
-font-family: Raleway;
-font-weight: 400;
-font-style: Regular;
-font-size: 18px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 0%;
+
 
 }
 
@@ -31,6 +25,7 @@ display: grid;
 grid-template-columns: 1fr min-content 1fr;
 align-items: center;
 padding: 133px 50px ;
+padding-bottom: 92px;
 }
 
 .header-nav {
@@ -40,17 +35,51 @@ padding: 133px 50px ;
 
 .header-menu {
    display: flex;
-   gap: 34px;
+   padding-bottom: 5px;
+   
+   gap: 26px;
    list-style: circle;
 
 }
 
-.header-menu-item{
+.header-menu a {
+    
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.about-lots {
+    margin-left: 10px;
+}
+
+
+.header-menu-item-1 {
+    list-style: none;
 
 }
 
-.menu-href {
+.header-menu-item-2 {
+    padding-left: 6px;
+    padding-right: 3px;
+}
 
+.header-menu-item-3 {
+    padding-left: 6px;
+}
+
+.menu-href {
+    font-family: Raleway;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.menu-href_no-underline{
+    text-decoration: none;
 }
 
 .header-logo {
@@ -67,19 +96,48 @@ padding: 133px 50px ;
 }
 
 .adress {
+    font-style: normal;
   justify-self: end;
   max-width: 240px;
   max-height: 98px;
 
 }
 
+.adress a{
+    font-family: Raleway;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    font-variant-numeric: tabular-nums;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 24.3px;
+letter-spacing: 0%;
+
+
+}
+
+.adress-text {
+    font-family: Raleway;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 24.3px;
+letter-spacing: 0%;
+
+}
+
 .cover {
+    
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 91vh;
 
     padding: 100px 90px;
-
+    padding-bottom: 0px;
+    padding-right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,13 +155,15 @@ padding: 133px 50px ;
 .overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
 
 /* Заголовок */
 .cover-title {
+    margin-top: 65px;
+    padding-bottom: 100px;
     position: relative;
     z-index: 2;
 
@@ -115,39 +175,53 @@ font-style: Bold;
 font-size: 100px;
 leading-trim: NONE;
 line-height: 114.99999999999999%;
-letter-spacing: 30%;
+letter-spacing: 30px;
 text-transform: uppercase;
 color: #FFF;
-z-index: 2;
 
-    display: flex;
-    flex-direction: column;   /* <-- ГЛАВНОЕ */
+
+   
 }
 
 
 /* Каждое слово в заголовке */
 .cover-title span {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-right: 0;
+    z-index: 0;
     display: block;           /* <-- делает каждое слово отдельной строкой */
 }
 
 
 /* Выравнивание слов */
 .aligned-text {
+    
     text-align: left;
+    margin-top: 1px;
+    margin-left: -40px;
 }
 
 .aligned-text-center {
     text-align: center;
+    margin-top: 2px;
+    margin-left: -40px;
 }
 
 .aligned-text-right {
+    margin-right: 100px;
     text-align: right;
+    
+    
 }
 
 
 /* Описание */
 .description {
-    margin-top: 50px;
+    margin-top: -10px;
+    margin-left: -40px;
+    margin-bottom: 50px;
+    justify-self: flex-end;
 
     position: relative;
     z-index: 2;
@@ -158,20 +232,126 @@ z-index: 2;
 }
 
 .description-text {
+    
+    word-spacing: 20px;
     font-size: 22px;
     text-transform: uppercase;
+    padding-right: 76px;
+    
 }
 
+.B {
+    word-spacing: 16px;
+}
+
+.whitespace1 {
+    word-spacing: 20px;
+}
+
+.whitespace2 {
+    word-spacing: 16px;
+}
+.whitespace4 {
+    word-spacing: 18px;
+}
 
 /* Кнопка */
 .description-button {
     background: transparent;
     border: 1px solid #FFF;
     color: #FFF;
+    margin-top:0px;
+    margin-bottom: 0px;
+    padding: 12px 32px 11px 31px;
 
-    padding: 12px 32px;
-
-    font-size: 18px;
+    
+    font-size: 22px;
     text-transform: uppercase;
+    
     cursor: pointer;
+}
+
+.lots {
+    display: flex;
+    margin:180px 24px 0px 24px;
+    flex-direction: column;
+
+}
+
+.lots h2{
+    margin-left: 40px;
+    padding-bottom: 31px;
+}
+
+.lots-ul {
+    color: #FFF;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    
+    
+}
+
+.lots a article{
+    height: 100%;
+}
+
+.lots-href {
+    z-index: 2;
+    font-family: Raleway;
+font-weight: 700;
+font-style: Bold;
+font-size: 22px;
+leading-trim: NONE;
+line-height: 120%;
+letter-spacing: 0%;
+text-transform: uppercase;
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration-offset: 0%;
+text-decoration-thickness: 0%;
+margin: 48px 40px 0 40px;
+
+
+}
+
+.card {
+    z-index: 3;
+    position: relative;
+    font-family: Raleway;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 120%;
+letter-spacing: 0%;
+align-self: flex-end;
+
+
+}
+
+.lot {
+    
+    display: flex;
+    position: relative;
+    width: 334px;
+    min-height: 60vh;
+    flex-direction: column;
+}
+
+.lot1 {
+    background-image: url(/images/card-lot-01.jpg);
+    background-size: cover;
+
+}
+
+.lot2 {
+    background-image: url(/images/card-lot-02.jpg);
+    background-size: cover;
+}
+
+.lot3 {
+    background-image: url(/images/card-lot-03.jpg);
+    background-size: cover;
 }

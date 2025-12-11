@@ -5,33 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="/fonts/fonts.css">
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     
     <header class = "header">
       <nav class="header-nav">
         <ul class="header-menu">
-          <li class="header-menu-item">
-            <a class="menu-href" href="">Главная</a>
+          <li class="header-menu-item header-menu-item-1">
+            <a class="menu-href menu-href_no-underline" href="">главная</a>
           </li>
-          <li class="header-menu-item">
-            <a class="menu-href" href="">посмотреть лоты</a>
+          <li class="header-menu-item header-menu-item-2">
+            <a class="menu-href" href=""><span class="view-lots">посмотреть лоты</span></a>
           </li>
-          <li class="header-menu-item">
-            <a class="menu-href" href="">об аукционе</a>
+          <li class="header-menu-item header-menu-item-3">
+            <a class="menu-href" href=""><span class="about-auk">об аукционе</span></a>
           </li>
         </ul>
       </nav>
       <a class="header-logo" >
-        <img class="header-logo-img" src="/images/logo-black.svg" alt="логотип 'оно тебе надо">
+        <img class="header-logo-img" src="images/logo-black.svg" alt="логотип 'оно тебе надо">
       </a>
       <address class="adress">
-        <a href="tel:+79236424583">+7(923)642-45-83</a>
-        <a href="mailto:egorbasargin441@gmail.com">egorbasargin441@gmail.com</a>
-        <p>наб. Принсенграхт 263-<br> 265, Амстердам</p>
+        <a class="phone" href="tel:+79236424583">+7(923)642-45-83</a>
+        <a class="mail" href="mailto:egorbasargin441@gmail.com">egorbasargin441@gmail.com</a>
+        <p class="adress-text">наб. Принсенграхт 263-<br> 265, Амстердам</p>
 
       </address>
     </header>
@@ -41,28 +41,48 @@
         <h1 class="cover-title"><span class="aligned-text">оно</span ><span class="aligned-text-center">тебе</span><span class="aligned-text-right">надо</span></h1>
         
         <div class="description">
-          <p class = "description-text">Аукцион вещей, вкоторые никто не верил</p>
+          <p class = "description-text"><span>Аукцион вещей,</span><span class="B"> в</span><span class="whitespace1"> которые</span><span class="whitespace2"> никто</span><span class="whitespace3"> </span>не<span class="whitespace4"> верил</span></p>
           <button class="description-button">Сделать ставку</button>
         
         </div>
       </section>
       <section class="lots">
-        <ul>
-          <h2>Лоты</h2>
+        
+        <h2 class="lots-title">Лоты</h2>
+
+        <ul class="lots-ul">
           <li class="lot lot1">
-            <a class="lots-href" href="">Фильм режиссёра, который бросил киношколу</a>
-            <article class = "card">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</article>
+            <div class="overlay"></div>
+            <a class="lots-href" href="#">
+              <h3>Фильм режиссёра, который бросил киношколу</h3>
+              <p class="card">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка...
+              </p>
+            </a>
           </li>
+
           <li class="lot lot2">
-            <a class="lots-href" href="">Книга, где описан один скучный день из жизни рекламного агента</a>
-            <article class = "card">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</article>
+            <div class="overlay"></div>
+            <a class="lots-href" href="#">
+              <h3>Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="card">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания...
+              </p>
+            </a>
           </li>
+
           <li class="lot lot3">
-            <a class="lots-href" href="">Картина, которую повторит даже 5-летний сын маминой подруги</a>
-            <article class = "card">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</article>
+            <div class="overlay"></div>
+            <a class="lots-href" href="#">
+              <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="card">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее...
+              </p>
+            </a>
           </li>
-          <a href="">посмотреть больше</a>
         </ul>
+
+        <a class="lots-more" href="#">посмотреть больше</a>
       </section>
       <section class="about">
         <div>
