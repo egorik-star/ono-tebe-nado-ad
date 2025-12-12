@@ -67,7 +67,7 @@ letter-spacing: 0%;
 
 }
 
-.menu-href_no-underline{
+.menu-href_no-underline {
     text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ letter-spacing: 0%;
     padding-bottom: 102px;
 }
 
-.adress a{
+.adress a {
     font-family: Raleway;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
@@ -262,12 +262,7 @@ line-height: 100%;
 letter-spacing: 0%;
 text-align: center;
 text-transform: uppercase;
-
-    
-    font-size: 22px;
-    text-transform: uppercase;
-    
-    cursor: pointer;
+cursor: pointer;
 }
 
 .lots {
@@ -277,7 +272,7 @@ text-transform: uppercase;
 
 }
 
-.lots-title{
+.lots-title {
     margin-top: 4px;
     margin-left: 40px;
     padding-bottom: 30px;
@@ -294,7 +289,7 @@ text-transform: uppercase;
     
 }
 
-.lots a article{
+.lots a article {
     height: 100%;
 }
 
@@ -377,7 +372,7 @@ align-self: flex-end;
 font-weight: 400;
 font-style: Regular;
 font-size: 20px;
-leading-trim: NONE;
+
 line-height: 100%;
 letter-spacing: 0%;
 margin-top: 31px;
@@ -409,7 +404,7 @@ text-decoration-thickness: 1px;
     
 
 }
-.about-logo{
+.about-logo {
     max-width: 62%;
     max-height: auto;
     display: block;
@@ -492,7 +487,7 @@ letter-spacing: 0%;
 
     
 }
-.footer-menu-href{
+.footer-menu-href {
       font-family: Raleway;
 font-weight: 400;
 font-style: Regular;
@@ -505,7 +500,7 @@ text-decoration-thickness: 1px;
 text-underline-offset: 4px;
 }
 
-.footer-menu-href_no-underline{
+.footer-menu-href_no-underline {
     text-decoration: none;
 }
 
